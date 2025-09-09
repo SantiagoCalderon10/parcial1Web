@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('form-registro');
+    const form = document.querySelector('.form-registro');}
+  
 
-const btnCancelar = document.querySelector('.btnCancelar');
+    const btnCancelar = document.querySelector('.btncancelar');
     form.addEventListener('submit', () => {
-   
+
 
         const regexNombresApellidos = /^[A-Za-z\s]+$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const regexTelefono = /^\d{10}$/; 
-        const regexEstrato = /^[1-6]$/; 
+        const regexTelefono = /^\d{10}$/;
+        const regexEstrato = /^[1-6]$/;
 
         const nombres = document.getElementById('nombres').value.trim();
         const apellidos = document.getElementById('apellidos').value.trim();
@@ -20,7 +21,7 @@ const btnCancelar = document.querySelector('.btnCancelar');
         const genero = document.querySelector('input[name="genero"]:checked');
         const actividades = Array.from(document.querySelectorAll('input[name="actividades"]:checked')).map(el => el.value);
 
-      
+
         let isValid = true;
         let errorMessage = '';
 
@@ -66,7 +67,7 @@ const btnCancelar = document.querySelector('.btnCancelar');
             return;
         }
 
-    
+
         const mensajeFinal = `
             Registro Exitoso:\n
             Nombres: ${nombres}
@@ -83,9 +84,9 @@ const btnCancelar = document.querySelector('.btnCancelar');
         alert(mensajeFinal);
     });
 
-    
+
     btnCancelar.addEventListener('click', () => {
-       
-        window.location.href = "Login.html"; 
+
+        window.location.href = "Login.html";
     });
 });
