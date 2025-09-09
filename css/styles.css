@@ -1,0 +1,55 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    gap:2px;
+
+}
+header{
+    border: #403f3f;
+    margin-bottom: 1rem;
+}
+.barra-navegacion{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    
+}
+.login{
+    margin-left: auto;
+}
+
+.barra-navegacion a, .login a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.barra-navegacion a:hover,
+.login a:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+  
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+#buscar{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#buscar:focus{
+    outline: none;
+    border: 2px solid #555;
+}

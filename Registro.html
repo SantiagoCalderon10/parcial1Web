@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesRegistro.css">
+</head>
+ <header>
+        <nav class = "barra-navegacion">
+            
+                <a href="index.html" class="nav-items">Noticia</a>
+                <a href="" class="nav-items">Catalogo</a>
+                <a href="" class="nav-items">Sobre nosotros</a>
+                <div class = "login"><a href="Login.html" class="nav-items">Inicia Sesión</a></div>
+                
+        </nav>
+    </header>
+
+  <div class="form-container">
+    <h2 class="form-title">Ingrese los datos para registrarse</h2>
+
+    <form class="form-registro">
+
+        
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" name="nombres">
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos">
+        </div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="estrato">Estrato</label>
+          <input type="number" id="estrato" name="estrato" min="1" max="6">
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha Nacimiento</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="form-group">
+          <label for="sangre">Grupo Sanguíneo</label>
+          <select id="sangre" name="sangre">
+            <option value="">Seleccione</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Género -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Género</label>
+          <div class="radio-group">
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actividades -->
+      <div class="form-row">
+        <div class="form-group">
+          <label>Actividades Favoritas</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="actividades" value="futbol"> Futbol</label>
+            <label><input type="checkbox" name="actividades" value="baloncesto"> Baloncesto</label>
+            <label><input type="checkbox" name="actividades" value="voleibol"> Voleibol</label>
+            <label><input type="checkbox" name="actividades" value="ciclismo"> Ciclismo</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">Registrar</button>
+        <button type="reset" class="btn btn-danger"><a href="index.html">Cancelar</a></button>
+      </div>
+    </form>
+  </div>
+
+    
+</body>
+</html>
