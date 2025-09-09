@@ -21,6 +21,15 @@ header{
 .login{
     margin-left: auto;
 }
+#buscar{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#buscar:focus{
+    outline: none;
+    border: 2px solid #555;
+}
 
 .barra-navegacion a, .login a{
     color: black;

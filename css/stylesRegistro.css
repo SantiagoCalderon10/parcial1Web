@@ -16,6 +16,16 @@ body{
     gap:2px;
 
 }
+#buscar{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#buscar:focus{
+    outline: none;
+    border: 2px solid #555;
+}
+
 header{
     border: #403f3f;
     margin-bottom: 1rem;
