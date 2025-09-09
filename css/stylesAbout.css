@@ -40,32 +40,3 @@ header{
     outline: none;
     border: 2px solid #555;
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-  overflow: hidden;
-}
-.btn:hover{
-    transform: scale(1.1);
-    transition: all 0.3s;
-}
-.noticias-list{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-.contenedor{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.contenedor .columna h4{
-    font-weight: bolder;
-}
