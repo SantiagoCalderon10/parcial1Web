@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.form-registro');}
-  
+    const form = document.querySelector('.form-registro');
 
     const btnCancelar = document.querySelector('.btncancelar');
     form.addEventListener('submit', () => {
